@@ -11,6 +11,8 @@ var tripsRouter = require("./routes/trips");
 var cartsRouter = require("./routes/carts");
 
 var app = express();
+const cors = require("cors");
+app.use(cors());
 
 app.use(logger("dev"));
 app.use(express.json());
