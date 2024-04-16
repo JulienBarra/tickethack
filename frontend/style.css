@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+}
+
+#container {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: repeat(12, 1fr);
+  grid-template-columns: repeat(12, 1fr);
+}
+
+#background-trip{
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: repeat(12, 1fr);
+  grid-template-columns: repeat(12, 1fr);
+  background-image: url("../backend/images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#header {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 13;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  
+}
+
+#introduction{
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 13;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+
+}
+
+#column-left {
+  grid-row-start: 3;
+  grid-row-end: 13;
+  grid-column-start: 1;
+  grid-column-end: 6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding-left: 200px;
+  
+}
+
+#trip-section{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+margin: 5px;
+}
+
+#column-right {
+  grid-row-start: 3;
+  grid-row-end: 13;
+  grid-column-start: 6;
+  grid-column-end: 13;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-left: 80px;
+ 
+}
+
+#calendar-trip{
+  width: 20vw;
+  padding: 10px;
+  background-color: rgba(241,243,243,255);
+}
+
+#btn-search {
+  width: 20vw;
+  padding: 10px;
+  border: 2px #ffffff solid;
+  border-radius: 10px;
+  color: #ffffff;
+  background-color: rgba(79,168,144,255);
+  font-size: 16px;
+}
+
+#btn-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+#departure-trip{
+  width: 20vw;
+  padding: 10px;
+  align-items: center;
+  background-color: rgba(241,243,243,255);
+}
+#arrival-trip{
+  width: 20vw;
+  padding: 10px;
+  align-items: center;
+  background-color: rgba(241,243,243,255);
+}
+
+.text-btn-header{
+
+  margin-left: 10px;
+  font-size: 12px;
+  font-family: sans-serif;
+}
+
+.card {
+  height: 45vh;
+  width: 25vw;
+  background-color: #ffffff;
+  border: 1px darkgrey solid;
+  align-items: center;
+  border-radius: 10px;
+  margin: 2vw;
+  padding: 2vh;
+}
+
+.green {
+  color: rgba(79,168,144,255);
+}
+
+h1{
+  font-size: 25px;
+  font-family: sans-serif;
+}
+
+h2{
+  font-size: 30px;
+  font-family: sans-serif;
+}
+
+p{
+  font-family: sans-serif;
+}

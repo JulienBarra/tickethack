@@ -1,0 +1,58 @@
+<!-- Insert your code here -->
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickethack</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="header">
+            <div id="logo-container">
+                <h1 class="green">Tickethack</h1>
+            </div>
+            <div id="btn-header">
+                <p class="text-btn-header" id="btn-cart">Cart</p>
+                <p class="text-btn-header" id="btn-bookings">Bookings</p>
+            </div>
+
+        </div>
+
+        <div id="background-trip">
+            <div id="introduction">
+                <h2>Explore the world effortlessly by train!</h2>
+                <p>Compare, book and enjoy cheap prices for train tickets: your journey starts on Tickethack.</p>
+            </div>
+
+            <div id="column-left">
+
+                <div class="card" id="trip-section">
+                    <div class="content" id="date-trip">
+                        <input id="departure-trip" type="text" placeholder="Departure" />
+                        <input id="arrival-trip" type="text" placeholder="Arrival" />
+                    </div>
+                    <div>
+                        <input id="calendar-trip" type="date" />
+                    </div>
+                    <div>
+                        <button type="button" id="btn-search">Search</button>
+                    </div>
+                </div>
+
+            </div>
+            <div id="column-right">
+                <div class="card" id="data-trip"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
