@@ -93,7 +93,7 @@ margin: 5px;
   width: 20vw;
   padding: 10px;
   border: 2px #ffffff solid;
-  border-radius: 10px;
+  border-radius: 5px;
   color: #ffffff;
   background-color: rgba(79,168,144,255);
   font-size: 16px;
@@ -183,17 +183,23 @@ p{
 }
 
 .result-trip{
-  width: 20vw;
-  height: 40px;
-  border-radius: 10px;
+  width: 22vw;
+  height: 45px;
+  margin: 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 12px;
   background-color: rgba(241,243,243,255);
 }
 
 #btn-book{
-  width: 5vw;
+  width: 6vw;
   padding: 10px;
+  margin: 3px;
   border: 2px #ffffff solid;
-  border-radius: 10px;
+  border-radius: 5px;
   color: #ffffff;
   background-color: rgba(79,168,144,255);
   font-size: 12px;
