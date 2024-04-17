@@ -52,6 +52,10 @@ for (let i = 0; i < allButtonBook.length; i++) {
   });
 }
 
+
+
+
+
 //FRONTEND
 
 // bouton search - Home
@@ -59,7 +63,7 @@ for (let i = 0; i < allButtonBook.length; i++) {
 // Si la recherche présente plusieurs résultat: afficher les voyages a droite -OK
 
 // bouton book - Home
-// lors du click : - le click renvoie sur la page My cart
+// lors du click : - le click renvoie sur la page My cart -OK
 //                 - ajoute le voyages selectionné dans le panier
 //                 - le coût total du panier change (++)
 //                 - le logo du site doit renvoyer sur la page d'accueil -OK
