@@ -3,7 +3,12 @@ document.querySelector("#btn-search").addEventListener("click", function () {
   const arrival = document.querySelector("#arrival-trip").value;
   const date = document.querySelector("#calendar-trip").value;
 
-  console.log(departure, arrival, date);
+  if (!departure || !arrival || !date) {
+    document.querySelector("#img-train").src = "../backend/images/notfound.png";
+    document.querySelector("#text-train").textContent =
+      "Missing or empty fields";
+    return;
+  }
 
   fetch("http://localhost:3000/trips/searchTrips", {
     method: "POST",
@@ -12,11 +17,27 @@ document.querySelector("#btn-search").addEventListener("click", function () {
   })
     .then((resp) => resp.json())
     .then((result) => {
-      if (!result) {
+      if (!result.trips.length) {
         document.querySelector("#img-train").src =
           "../backend/images/notfound.png";
         document.querySelector("#text-train").textContent = "No trip found";
         return;
+      }
+
+      document.querySelector("#data-trip").firstElementChild.remove();
+
+      for (let element of result.trips) {
+        const stringDate = element.date;
+        const formatDate = stringDate.slice(11, 16);
+
+        document.querySelector("#data-trip").innerHTML += `
+        <div class="result-trip">
+            <p><span id="departure">${element.departure}</span> > <span id="arrival">${element.arrival}</span> <span
+                    id="hour">${formatDate}</span>
+                <span id="price">${element.price}</span>€
+            </p>
+            <button type="button" id="btn-book">Book</button>
+        </div>`;
       }
     });
 });
