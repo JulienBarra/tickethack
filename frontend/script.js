@@ -12,7 +12,12 @@ document.querySelector("#btn-search").addEventListener("click", function () {
   })
     .then((resp) => resp.json())
     .then((result) => {
-      console.log(result.trips);
+      if (!result) {
+        document.querySelector("#img-train").src =
+          "../backend/images/notfound.png";
+        document.querySelector("#text-train").textContent = "No trip found";
+        return;
+      }
     });
 });
 
