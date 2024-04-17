@@ -205,7 +205,7 @@ p{
   background-color: rgba(241,243,243,255);
 }
 
-#btn-book{
+.btn-book{
   width: 6vw;
   padding: 10px;
   margin: 3px;
