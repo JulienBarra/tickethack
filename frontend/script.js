@@ -18,14 +18,17 @@ document.querySelector("#btn-search").addEventListener("click", function () {
     .then((resp) => resp.json())
     .then((result) => {
       if (!result.trips.length) {
-        document.querySelector("#img-train").src =
-          "../backend/images/notfound.png";
-        document.querySelector("#text-train").textContent = "No trip found";
+        document.querySelector("#img-default").style.display = "none";
+        document.querySelector("#data-trip").innerHTML += `
+        <div id="img-default">
+            <img id="img-train" src="../backend/images/notfound.png" alt="loupe-verte" />
+            <hr>
+            <p id="text-train">Trip not found</p>
+        </div>`;
         return;
       }
 
-      document.querySelector("#data-trip").firstElementChild.remove();
-
+      document.querySelector("#img-default").style.display = "none ";
       for (let element of result.trips) {
         const stringDate = element.date;
         const formatDate = stringDate.slice(11, 16);
