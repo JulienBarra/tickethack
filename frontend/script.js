@@ -62,7 +62,7 @@ document.querySelector("#btn-search").addEventListener("click", function () {
 //                 -  MAJ du cout total du panier (--)
 
 // bouton Purchase - My cart
-// lors du click : - renvoie sur la page My booking 
+// lors du click : - renvoie sur la page My booking
 //                 - affiche le résumé des voyages validé dans le panier
 //                 - affiche pour chaque voyage le temps restant avant le départ
 //                 - vide le panier
