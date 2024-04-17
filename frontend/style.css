@@ -73,8 +73,18 @@ text-decoration: none;
 display: flex;
 flex-direction: column;
 align-items: center;
-justify-content: space-between;
+justify-content: space-around;
 margin: 5px;
+overflow: auto;
+}
+
+#data-trip{
+  display : flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
+  overflow: auto;
 }
 
 #column-right {
@@ -113,14 +123,6 @@ margin: 5px;
   color: black;
 }
 
-#data-trip{
-  display : flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  margin: 10px;
-  overflow: auto;
-}
 
 #departure-trip{
   width: 20vw;
@@ -146,6 +148,7 @@ text-align: center;
   width: 150px;
   display: block;
   margin: auto;
+
 }
 
 hr{

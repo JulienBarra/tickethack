@@ -45,17 +45,21 @@ document.querySelector("#btn-search").addEventListener("click", function () {
     });
 });
 
+
+
+
+
 //FRONTEND
 
 // bouton search - Home
-// Si la recherche ne présente aucun résultats: afficher "No trip found" + image loupe croix
-// Si la recherche présente plusieurs résultat: afficher les voyages a droite
+// Si la recherche ne présente aucun résultats: afficher "No trip found" + image loupe croix -OK
+// Si la recherche présente plusieurs résultat: afficher les voyages a droite -OK
 
 // bouton book - Home
 // lors du click : - le click renvoie sur la page My cart
-//                 - ajoute le voyages selectionner dans le panier
-//                 - le cout total du panier change (++)
-//                 - le logo du site doit renvoyer sur la page d'accueil
+//                 - ajoute le voyages selectionné dans le panier
+//                 - le coût total du panier change (++)
+//                 - le logo du site doit renvoyer sur la page d'accueil -OK
 
 // bouton delete - My cart
 // lors du click : - supprime le voyage dans le panier +
