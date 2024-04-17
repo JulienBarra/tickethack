@@ -42,15 +42,15 @@ document.querySelector("#btn-search").addEventListener("click", function () {
             <button type="button" class="btn-book">Book</button>
         </div>`;
       }
+
+      const allButtonBook = document.querySelectorAll(".btn-book");
+      for (let i = 0; i < allButtonBook.length; i++) {
+        allButtonBook[i].addEventListener("click", function () {
+          window.location.assign("cart.html");
+        });
+      }
     });
 });
-
-const allButtonBook = document.querySelectorAll(".btn-book");
-for (let i = 0; i < allButtonBook.length; i++) {
-  allButtonBook[i].addEventListener("click", function () {
-    window.location.assign("/cart.html");
-  });
-}
 
 //FRONTEND
 

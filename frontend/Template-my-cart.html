@@ -1,45 +1,44 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My cart</title>
-    <link rel="stylesheet" href="Template-my-cart.css">
-</head>
+    <link rel="stylesheet" href="Template-my-cart.css" />
+  </head>
 
-<body>
+  <body>
     <div id="container">
-        <div id="header">
-            <div id="logo-container">
-                <h1 class="green">Tickethack</h1>
-            </div>
-            <div id="btn-header">
-                <p class="text-btn-header" id="btn-cart">Cart</p>
-                <p class="text-btn-header" id="btn-bookings">Bookings</p>
-            </div>
+      <div id="header">
+        <div id="logo-container">
+          <h1 class="green">Tickethack</h1>
         </div>
-        <div id="background-booking">
-
-            <div class="card">
-                <p id="mycart">My cart</p>
-                <div class="result-trip">
-                    <p><span id="departure">Paris</span> > <span id="arrival">Lyon</span> <span id="hour">16:23</span>
-                        <span id="price">126</span>€</p>
-                    <button type="button" id="btn-x">X</button>
-                </div>
-                <div class="total-purchase">
-                    <p>Total:<span id="price-purchase">103</span>€</p>
-                    <button type="button" id="btn-purchase">Purchase</button>
-                </div>
-            </div>
-
+        <div id="btn-header">
+          <p class="text-btn-header" id="btn-cart">Cart</p>
+          <p class="text-btn-header" id="btn-bookings">Bookings</p>
         </div>
-
-
+      </div>
+      <div id="background-booking">
+        <div id="card-two">
+          <div id="trip-cart">
+            <p id="mycart">My cart</p>
+            <div class="result-trip">
+              <p>
+                <span id="departure">Paris</span> >
+                <span id="arrival">Lyon</span> <span id="hour">16:23</span>
+                <span id="price">126</span>€
+              </p>
+              <button type="button" id="btn-x">X</button>
+            </div>
+            <div class="total-purchase">
+              <p>Total:<span id="price-purchase">103</span>€</p>
+              <button type="button" id="btn-purchase">Purchase</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
