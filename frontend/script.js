@@ -59,7 +59,7 @@ document.querySelector("#btn-search").addEventListener("click", function () {
 // Si la recherche présente plusieurs résultat: afficher les voyages a droite -OK
 
 // bouton book - Home
-// lors du click : - le click renvoie sur la page My cart
+// lors du click : - le click renvoie sur la page My cart -OK
 //                 - ajoute le voyages selectionné dans le panier
 //                 - le coût total du panier change (++)
 //                 - le logo du site doit renvoyer sur la page d'accueil -OK
