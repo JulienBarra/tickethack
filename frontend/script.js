@@ -39,15 +39,18 @@ document.querySelector("#btn-search").addEventListener("click", function () {
                     id="hour">${formatDate}</span>
                 <span id="price">${element.price}</span>€
             </p>
-            <button type="button" id="btn-book">Book</button>
+            <button type="button" class="btn-book">Book</button>
         </div>`;
       }
     });
 });
 
-
-
-
+const allButtonBook = document.querySelectorAll(".btn-book");
+for (let i = 0; i < allButtonBook.length; i++) {
+  allButtonBook[i].addEventListener("click", function () {
+    window.location.assign("/cart.html");
+  });
+}
 
 //FRONTEND
 
