@@ -34,7 +34,7 @@ document.querySelector("#btn-search").addEventListener("click", function () {
         const formatDate = stringDate.slice(11, 16);
 
         document.querySelector("#data-trip").innerHTML += `
-        <div class="result-trip">
+        <div id='${element.id}' class="result-trip">
             <p><span id="departure">${element.departure}</span> > <span id="arrival">${element.arrival}</span> <span
                     id="hour">${formatDate}</span>
                 <span id="price">${element.price}</span>€
